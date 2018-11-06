@@ -20,9 +20,14 @@ En sortie: [
 ]
 
  */
-
+const tablMiam =['Chicken','Bacon','Tofu','Mayonnaise'];
 function getStringsLength(strings) {
+const test = strings.map(function(ingre){
+  return (ingre + " contains " + ingre.length + " characters");
+});
+return test;
 }
+getStringsLength(tablMiam);
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
 // mais alors, il faut alors lancer l'exercice avec node map/ex1

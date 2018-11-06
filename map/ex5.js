@@ -11,8 +11,18 @@ Exemple de tableau d'entrée:
 Tableau renvoyé par multiplyOddIndices:
   [3, 8, 11, 39, 19, 35]
 */
-
+const numbersData = [3, 8, 11, 13, 19, 7];
 function multiplyOddIndices(numbers) {
+  const multByIndex = numbers.map(function(number, index){
+    if(index %2 !== 0){
+      return number * index;
+    }
+    else{
+      return number;
+    }
+  })
+  return multByIndex;
 }
+multiplyOddIndices(numbersData);
 
 module.exports = multiplyOddIndices;
